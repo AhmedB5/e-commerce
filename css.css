@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eeecec;
+}
+.container {
+  width: 900px;
+  height: 1500px;
+  padding: 20px;
+  margin: auto;
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container ul {
+  color: rgb(21, 20, 20);
+  list-style: none;
+  display: flex;
+  margin-left: 200px;
+  margin-top: -15px;
+}
+
+#ic1:hover,
+#ic2:hover {
+  color: #01a2de;
+}
+/* 00000000000000000 */
+#ser {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+  /* background-color: red; */
+  z-index: 2;
+}
+#clos {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(60, 59, 59);
+  position: fixed;
+  margin-left: 89%;
+  margin-top: -34%;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+}
+/* 00000000000000000 */
+
+.container ul li {
+  margin-left: 25px;
+}
+.container ul li:hover {
+  color: #01a2de;
+  cursor: pointer;
+}
+.kalam {
+  height: 300px;
+  padding: 60px;
+}
+
+.kalam h3 {
+  margin-left: -60px;
+  margin-top: 70px;
+}
+.kalam h5 {
+  width: 503px;
+  line-height: 1.5;
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-left: -57px;
+}
+.Allproduct {
+  height: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.product {
+  width: 216px;
+  height: 300px;
+  border: solid 4px #eeeeee;
+}
+img {
+  width: 180px;
+  height: 210px;
+  margin-left: 13px;
+  cursor: pointer;
+}
+img:hover {
+  padding: 2px;
+}
+.Allproduct p {
+  text-align: center;
+}
+.Allproduct p:hover {
+  color: #01a2de;
+  cursor: pointer;
+}
+.Allproduct h6 {
+  text-align: center;
+  margin-top: 14px;
+  opacity: 0.7;
+  z-index: 1;
+}
+.Allproduct h6 .befor {
+  text-decoration: line-through;
+  margin-right: 6px;
+}
+.Allproduct h6 .after {
+  color: #01a2de;
+}
+footer {
+  background-color: #1d1d1d;
+  color: aliceblue;
+  height: 200px;
+}
+footer p {
+  margin-top: 30px;
+  font-size: 17px;
+  text-align: center;
+}
+footer .icons {
+  text-align: center;
+}
+footer .icons i {
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 26px;
+  cursor: pointer;
+  /* background-color: #01a2de; */
+  height: min-content;
+}
+footer .icons i:hover {
+  /* background-color: #01a2de; */
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+#icona {
+  margin-left: 95%;
+  font-size: 25px;
+  position: relative;
+  top: -24px;
+  cursor: pointer;
+}
+.show {
+  display: none;
+}
+#close {
+  margin-left: 97%;
+  font-size: 29px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: -4%;
+}
+
+
+/* Mobaile */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 1000px;
+  }
+
+  /*0000000000000000000000000000*/
+  .container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .container ul li {
+    margin: 10px 0;
+  }
+
+  /*0000000000000000000000000000*/
+
+  header h3 {
+    margin-left: 10px;
+    font-size: 23px;
+  }
+  .kalam h3 {
+    margin-left: -50px;
+  }
+  .kalam h5 {
+    width: 120%;
+    margin-left: -45px;
+  }
+
+  .Allproduct {
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .Allproduct h6 {
+    font-size: 15px;
+  }
+
+  .product {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  img {
+    width: 89%;
+    height: 90%;
+  }
+  #im5,
+  #im6,
+  #im7,
+  #im8 {
+    display: none;
+  }
+  #im9,
+  #im10,
+  #im11,
+  #im12 {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    margin-top: 305%;
+    margin-left: 61%;
+    font-size: 19px;
+    cursor: pointer;
+  }
+  .show:hover {
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: 370%;
+    height: 180px;
+    width: 100%;
+    display: flex;
+  }
+  footer p {
+    margin-top: 130px;
+    margin-left: -183px;
+    font-size: 13px;
+    display: flex;
+  }
+  footer .icons {
+    margin-left: 29%;
+    display: flex;
+  }
+  footer .icons i {
+    text-align: center;
+  }
+  footer .icons i:hover {
+    color: red;
+  }
+
+  #clos {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(60, 59, 59);
+    position: fixed;
+    margin-left: 85%;
+    margin-top: -140%;
+    cursor: pointer;
+  }
+  #close {
+    font-size: 16px;
+  }
+  #icona {
+    font-size: 16px;
+  }
+}
+
+/*Small Scren*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 1400px;
+  }
+  /*0000000000000000000000000000*/
+  .container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .container ul li {
+    margin: 10px 0;
+    font-size: 28px;
+  }
+
+  /*0000000000000000000000000000*/
+
+  header h3 {
+    margin-left: 10px;
+    font-size: 23px;
+  }
+  .kalam h3 {
+    margin-left: -50px;
+  }
+  .kalam h5 {
+    width: 120%;
+    margin-left: -45px;
+  }
+
+  .Allproduct {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .Allproduct h6 {
+    font-size: 15px;
+  }
+
+  .product {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  img {
+    width: 89%;
+    height: 90%;
+  }
+  #im5,
+  #im6,
+  #im7,
+  #im8 {
+    display: none;
+  }
+  #im9,
+  #im10,
+  #im11,
+  #im12 {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    margin-top: 335%;
+    margin-left: 71%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .show:hover {
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: 370%;
+    height: 180px;
+    width: 100%;
+    display: block;
+  }
+  footer p {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  footer .icons {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .icons i {
+    display: flex;
+  }
+
+  #clos {
+    /* font-size: 29px; */
+    font-size: 29px;
+    text-align: center;
+    color: rgb(60, 59, 59);
+    position: fixed;
+    margin-left: 89%;
+    margin-bottom: -120px;
+    cursor: pointer;
+  }
+}
